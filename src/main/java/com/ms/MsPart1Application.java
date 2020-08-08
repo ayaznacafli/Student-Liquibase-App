@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MsPart1Application {
-
 	public static void main(String[] args) {
 		SpringApplication.run(MsPart1Application.class, args);
 	}

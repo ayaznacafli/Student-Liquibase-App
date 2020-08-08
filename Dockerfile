@@ -1,6 +1,6 @@
-FROM openjdk:8-jdk-alpine
-VOLUME /tmp
-COPY build/libs/demo-0.0.1-SNAPSHOT.jar /app/app.jar
+FROM alpine:3.11.2
+RUN apk add --no-cache openjdk11
+COPY build/libs/demo-1.0.eef3316.jar /app/
 WORKDIR /app/
 ENTRYPOINT ["java"]
-CMD ["-jar", "/app/app.jar"]
+CMD ["-jar", "/app/demo-1.0.eef3316.jar"]

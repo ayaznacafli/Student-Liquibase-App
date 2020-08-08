@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: 000
+      author: ayaznacafli
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: student_pkey
+                  name: id
+                  type: bigint
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+            tableName: student
