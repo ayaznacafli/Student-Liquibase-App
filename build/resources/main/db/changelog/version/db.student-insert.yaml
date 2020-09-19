@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200809-1015
+      author: ayaznacafli
+      changes:
+        - sql:
+            sql:  insert into students ( name, email, address_id, project_id) values ('Ayaz','ayaz.nacafli@mail.ru',1,1);
+        - sql:
+            sql:  insert into students ( name, email, address_id, project_id) values ('Ibrahim','hemidov@mail.ru',2,2);
+        - sql:
+            sql:  insert into students ( name, email, address_id, project_id) values ('Kenan','aslanov@mail.ru',3,3);

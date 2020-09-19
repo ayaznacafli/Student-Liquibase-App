@@ -3,3 +3,24 @@ databaseChangeLog:
       file: db/changelog/version/db.student-table.yaml
   - include:
       file: db/changelog/version/db.student-table-add-colmun.yaml
+  - include:
+      file: db/changelog/version/db.address-table.yaml
+  - include:
+      file: db/changelog/version/db.student-table-add-student-colmun.yaml
+  - include:
+      file: db/changelog/version/db.project-table.yaml
+  - include:
+      file: db/changelog/version/db.student-table-add-project-colmun.yaml
+#  - include:
+#      file: db/changelog/version/db.project-insert.yaml
+#  - include:
+#      file: db/changelog/version/db.address-insert.yaml
+#  - include:
+#      file: db/changelog/version/db.student-insert.yaml
+  - include:
+      file: db/changelog/version/db.group-table.yaml
+#  - include:
+#      file: db/changelog/version/db.group-insert.yaml
+  - include:
+      file: db/changelog/version/db.group_student-table.yaml
+

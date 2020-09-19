@@ -1,0 +1,21 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200815-1
+      author: ayaznacafli
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: address_pkey
+                  name: address_id
+                  type: bigint
+              - column:
+                  name: street
+                  type: VARCHAR(255)
+              - column:
+                  name: city
+                  type: VARCHAR(255)
+            tableName: address

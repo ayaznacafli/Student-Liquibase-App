@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200809-1013
+      author: ayaznacafli
+      changes:
+        - sql:
+            sql:  insert into projects ( name, description) values ('Cargo Backend','Cargo App Backend');
+        - sql:
+            sql:  insert into projects ( name, description) values ('Cargo IOS','Cargo App IOS');
+        - sql:
+            sql:  insert into projects ( name, description) values ('Cargo Android','Cargo App Android');

@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200816-12
+      author: ayaznacafli
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  name: group_id
+                  type: bigint
+              - column:
+                  name: student_id
+                  type: bigint
+            tableName: group_student

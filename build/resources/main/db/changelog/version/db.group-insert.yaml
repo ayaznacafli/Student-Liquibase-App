@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 22082020
+      author: ayaznacafli
+      changes:
+        - sql:
+            sql:  insert into student.grups (name, description) values ('845 a1','IT1');
+        - sql:
+            sql:  insert into student.grups (name, description) values ('845 a2','IT2');
+        - sql:
+            sql:  insert into student.grups (name, description) values ('845 a3','IT3');

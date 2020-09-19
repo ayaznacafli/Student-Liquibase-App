@@ -10,9 +10,9 @@ databaseChangeLog:
                   constraints:
                     primaryKey: true
                     primaryKeyName: student_pkey
-                  name: id
+                  name: student_id
                   type: bigint
               - column:
                   name: name
                   type: VARCHAR(255)
-            tableName: student
+            tableName: students

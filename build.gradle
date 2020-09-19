@@ -14,7 +14,7 @@ plugins {
 
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
+version = ''
 sourceCompatibility = '1.8'
 
 allprojects {
@@ -23,6 +23,11 @@ allprojects {
 	version = "$projectVersion.$hash"
 }
 
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
 
 
 repositories {
@@ -35,11 +40,21 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	runtimeOnly 'mysql:mysql-connector-java'
 	implementation("org.modelmapper:modelmapper:$modelmapperVersion")
+
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	compile group: 'org.springframework.security', name: 'spring-security-crypto', version: '5.3.4.RELEASE'
+
+
+
+
+
+
 	annotationProcessor 'org.projectlombok:lombok:1.18.8'
 	implementation("org.projectlombok:lombok:1.18.8")
+
 	compile group: 'io.springfox', name: 'springfox-swagger2', version: "2.9.2"
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	compile group: 'org.liquibase', name: 'liquibase-core', version: '4.0.0'
+    compile group: 'org.liquibase', name: 'liquibase-core', version: '4.0.0'
 
 
 
@@ -69,10 +84,6 @@ task dockerPush(type: DockerPushImage, dependsOn: dockerBuild) {
 	registryCredentials.setUsername("$dockerHubUsername")
 	registryCredentials.setPassword("$dockerHubPassword")
 	registryCredentials.setEmail("$dockerHubEmail")
-}
-
-task ayaz () {
-	print('ls'.execute().text)
 }
 
 test {

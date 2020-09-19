@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200815-2
+      author: ayaznacafli
+      changes:
+        - addColumn:
+            columns:
+              - column:
+                  name: project_id
+                  type: bigint
+            tableName: students

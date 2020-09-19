@@ -4,7 +4,7 @@ databaseChangeLog:
       author: ayaznacafli
       changes:
         - addColumn:
-            tableName: student
+            tableName: students
             columns:
               - column:
                   name: email

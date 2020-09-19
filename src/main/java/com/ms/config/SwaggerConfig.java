@@ -18,6 +18,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors.basePackage("com.ms.controller"))
                 .build()
+                .pathMapping("/swagger")
                 .apiInfo(getApiInfo());
     }
 

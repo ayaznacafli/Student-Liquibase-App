@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1011
+      author: ayaznacafli
+      changes:
+        - addColumn:
+            tableName: students
+            columns:
+              - column:
+                  name: address_id
+                  type: bigint(50)

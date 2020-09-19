@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20200809-1012
+      author: ayaznacafli
+      changes:
+        - sql:
+            sql:  insert into address ( street, city) values ('Resid Behbudov 1','Baki');
+        - sql:
+            sql:  insert into address ( street, city) values ('esid Behbudov 2','Baki');
+        - sql:
+            sql:  insert into address ( street, city) values ('esid Behbudov 3','Baki');
